@@ -1,0 +1,27 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar color="primary" [mode]="">
+      <ion-title>
+        Twitter Search
+      </ion-title>
+      <ion-buttons slot="end" *ngIf="isAuthenticated">
+<!--      <ion-buttons slot="end">-->
+        <ion-button expand="block" (click)="onLogout()">Signout</ion-button>
+      </ion-buttons>
+      <!--<ion-card *ngIf="isAuthenticated | async">
+        <ion-img [src]="(user | async).picture"></ion-img>
+        <ion-card-header>
+          <ion-card-title>{{(user | async).name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>@{{(user | async).userName}}</p>
+          <p>Followers: {{(user | async).followers}}</p>
+        </ion-card-content>
+        <ion-button expand="block" (click)="onLogout()()">Log Out</ion-button>
+      </ion-card>-->
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>
+</ion-app>

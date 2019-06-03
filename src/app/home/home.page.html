@@ -1,0 +1,15 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Search tweets by hashtags
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Search...</ion-label>
+        <ion-input (ionInput)="onSearch()" [(ngModel)]="searchText"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
